@@ -6,12 +6,12 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
   {
-    name: "AI Study",
+    name: "NetSafe",
     description:
-      "Three.js and React airplane model flight simulator with infinite mountainous terrain & crash effects!",
-    image: "/AI.png",
-    github: "https://github.com/Afi223/Study-backend",
-    link: "https://study-frontend-beta.vercel.app/",
+      "SafeNet is a edge-based AI traffic inspection and load-balancing system that performs real-time request classification, filtering malicious patterns and securely routing approved traffic.",
+    image: "/Logo.png",
+    github: "https://github.com/Wilsawn/NetSafe",
+    link: "https://devpost.com/software/netsafe",
   },
   {
     name: "CipherScan",
