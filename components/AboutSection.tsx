@@ -35,7 +35,7 @@ const aboutInfo = [
   },
   {
     head: "Sports",
-    description: "Whether it's watching or playing, you can catch me cheering on the Toronto Raptors and other Canadadian sports teams, or playing a quick pick-up game of basketball",
+    description: "Whether it's watching or playing, you can catch me cheering on the Toronto Raptors and other Canadian sports teams, or playing a quick pick-up game of basketball",
     link: ""
   },
   {
