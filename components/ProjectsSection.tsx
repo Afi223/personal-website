@@ -17,7 +17,7 @@ const projects = [
     name: "CipherScan",
     description:
       "CipherScan Scanner is a Python-based application designed to scan AWS S3 buckets for security vulnerabilities",
-    image: "/gui.png",
+    image: "/Gui.png",
     github: "https://github.com/Afi223/CipherScan",
     link: "https://github.com/Afi223/CipherScan/blob/main/README.md",
   },
