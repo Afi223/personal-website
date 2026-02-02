@@ -31,17 +31,18 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 z-50 w-full bg-white shadow dark:bg-stone-900 dark:border-b dark:border-stone-600">
-      <div className="flex items-center justify-between px-4 sm:px-20 py-4">
+      <div className="flex items-center justify-between px-4 sm:px-20 py-2 sm:py-4">
 
         {/* Logo */}
         <Link to="home">
-          <h2 className="text-2xl font-bold glitter-text">AH</h2>
+          <h2 className="text-lg sm:text-2xl font-bold glitter-text">AH</h2>
         </Link>
 
         {/* Mobile menu button */}
         <div className="md:hidden">
           <button onClick={() => setNavbar(!navbar)}>
-            {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
+            {navbar ? <IoMdClose size={24} className="sm:block hidden" /> : <IoMdMenu size={24} className="sm:block hidden" />}
+            {navbar ? <IoMdClose size={20} className="sm:hidden block" /> : <IoMdMenu size={20} className="sm:hidden block" />}
           </button>
         </div>
 
@@ -63,14 +64,14 @@ export default function Navbar() {
             }
           `}
         >
-          <div className="flex flex-col items-center space-y-8 md:flex-row md:space-y-0 md:space-x-6">
+          <div className="flex flex-col items-center space-y-4 sm:space-y-8 md:flex-row md:space-y-0 md:space-x-6">
 
             {NAV_ITEMS.map((item, idx) => (
               <Link
                 key={idx}
                 to={item.page}
                 onClick={() => setNavbar(false)}
-                className="text-neutral-900 dark:text-neutral-100 hover:opacity-80 transition"
+                className="text-sm sm:text-base text-neutral-900 dark:text-neutral-100 hover:opacity-80 transition"
               >
                 {item.label}
               </Link>
@@ -82,14 +83,16 @@ export default function Navbar() {
                   onClick={() => setTheme("light")}
                   className="bg-slate-100 p-2 rounded-xl hover:scale-110 transition"
                 >
-                  <RiSunLine size={25} className="text-black" />
+                  <RiSunLine size={20} className="sm:block hidden text-black" />
+                  <RiSunLine size={16} className="sm:hidden block text-black" />
                 </button>
               ) : (
                 <button
                   onClick={() => setTheme("dark")}
                   className="bg-slate-100 p-2 rounded-xl hover:scale-110 transition"
                 >
-                  <RiMoonFill size={25} className="text-black dark:text-white" />
+                  <RiMoonFill size={20} className="sm:block hidden text-black dark:text-white" />
+                  <RiMoonFill size={16} className="sm:hidden block text-black dark:text-white" />
                 </button>
               )
             )}
