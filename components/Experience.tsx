@@ -11,9 +11,36 @@ import { useState, useEffect } from "react";
  */
 const backgroundInfo = [
     {
+        position: "Security Engineer Intern",
+        name: "Scotiabank",
+        duration: "Sep 2026 - Present",
+        description: [
+            "Performed DAST and SAST scans using Snyk DAST, Burp Suite, and Checkmarx across enterprise web applications, reducing critical vulnerability backlog by 16%.",
+            "Conducted Software Composition Analysis (SCA) with Snyk Open Source to flag vulnerable dependencies across the Bank's application portfolio.",
+            "Triaged security findings by severity and exploitability, cutting false positive rate by 5% and accelerating remediation turnaround.",
+            "Conducted threat modeling on 4 applications to identify attack vectors early in the development lifecycle, reducing design-stage security gaps.",
+            "Reviewed and triaged AppSec findings across Google Cloud workloads, supporting the bank's cloud transformation initiative.",
+            "Integrated automated security scanning tools into CI/CD pipelines to identify vulnerabilities earlier in the development lifecycle.",
+            "Applied OWASP Top 10 and PCI-DSS frameworks to guide vulnerability assessments and control recommendations.",
+        ],
+        link: "",
+    },
+    {
+        position: "Software Engineer Intern",
+        name: "Government of Canada",
+        duration: "Apr 2026 - Aug 2026",
+        description: [
+            "Designed and implemented RESTful APIs in Java using Spring Boot, building reliable backend services for internal application workflows.",
+            "Optimized REST API performance by caching frequently requested data with Redis, reducing average response time from 220ms to 160ms.",
+            "Developed the persistence layer using Spring Data JPA on an embedded SQL database, implementing auditing for comprehensive change tracking.",
+            "Engineered stateless authentication using JWT to provide scalable, role-based access control.",
+        ],
+        link: "",
+    },
+    {
         position: "Software Engineer Intern",
         name: "BioCare",
-        duration: "Sep 2025 - Present",
+        duration: "Sep 2025 - Apr 2026",
         description: [
             "Developed a React Native mobile interface for a smart prosthetic system, implementing responsive UI and device integrations (live telemetry, gesture modes, preset control) to support real-time patient use and clinical monitoring.",
             "Architected Firebase infrastructure with secure authentication, real-time data synchronization, and encrypted database operations, reducing load times by 300ms.",
